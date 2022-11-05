@@ -11,19 +11,29 @@
 }
 h1 {
   padding-top: 20px;
-  color: #707375;
+  color: #676868;
 }
 li {
-  color: #9a9ea1;
+  color: #878a8d;
   list-style: none;
 }
 img {
-  margin-top: 0;
+  position: relative;
+  margin-right: 5px;
+  height: 70px;
+  width: 70px;
+  top: -15px;
 }
 #styleChange {
   padding-left: 0;
 }
 #temperature {
-  font-size: 50px;
-  color: #707375;
+  font-size: 70px;
+  color: #4b4d4e;
+  line-height: 1;
+  font-weight: 400;
+}
+#unit {
+  position: relative;
+  top: -31px;
 }
