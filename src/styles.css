@@ -1,0 +1,29 @@
+.container {
+  font-family: "Merriweather", serif;
+  width: 60%;
+  max-width: 600px;
+  border: 2px solid rgb(165, 163, 163);
+  padding: 20px;
+}
+.row {
+  margin: 0 auto;
+  width: 100%;
+}
+h1 {
+  padding-top: 20px;
+  color: #707375;
+}
+li {
+  color: #9a9ea1;
+  list-style: none;
+}
+img {
+  margin-top: 0;
+}
+#styleChange {
+  padding-left: 0;
+}
+#temperature {
+  font-size: 50px;
+  color: #707375;
+}
