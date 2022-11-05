@@ -4,6 +4,7 @@
   max-width: 600px;
   border: 2px solid rgb(165, 163, 163);
   padding: 20px;
+  margin: 15px auto;
 }
 .row {
   margin: 0 auto;
