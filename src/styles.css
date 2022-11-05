@@ -36,5 +36,8 @@ img {
 }
 #unit {
   position: relative;
-  top: -31px;
+  top: -40px;
+}
+li:first-letter {
+  text-transform: capitalize;
 }
