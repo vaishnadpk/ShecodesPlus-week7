@@ -43,7 +43,17 @@ function displayClimate(response) {
   iconElement.setAttribute("src", condition.icon_url);
   iconElement.setAttribute("alt", condition.description);
 }
+function search(city) {
+  let apiKey = "453efefad2a2c05ta857fb9cb92548o9";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayClimate);
+}
 
-let apiKey = "453efefad2a2c05ta857fb9cb92548o9";
-let apiUrl = `https://api.shecodes.io/weather/v1/current?query=helsingborg&key=${apiKey}`;
-axios.get(apiUrl).then(displayClimate);
+function handleSearch(event) {
+  event.preventDefault();
+  let searchInputElement = document.querySelector("#searchInput");
+  search(searchInputElement.value);
+}
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSearch);
