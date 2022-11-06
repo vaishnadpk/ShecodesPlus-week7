@@ -30,6 +30,7 @@ function displayClimate(response) {
   let windEvent = document.querySelector("#wind");
   let descriptionEvent = document.querySelector("#description");
   let dateElement = document.querySelector("#date");
+  let iconElement = document.querySelector("#icon");
 
   const { city, temperature, condition, wind, time } = response.data;
 
@@ -39,6 +40,8 @@ function displayClimate(response) {
   windEvent.innerHTML = Math.round(wind.speed);
   descriptionEvent.innerHTML = condition.description;
   dateElement.innerHTML = formateDate(time * 1000);
+  iconElement.setAttribute("src", condition.icon_url);
+  iconElement.setAttribute("alt", condition.description);
 }
 
 let apiKey = "453efefad2a2c05ta857fb9cb92548o9";
