@@ -49,3 +49,10 @@ li:first-letter {
 .col-6 .active {
   color: #676868;
 }
+p {
+  color: #676868;
+  font-family: monospace;
+  padding: 5px;
+  margin-bottom: 0;
+  font-size: large;
+}
