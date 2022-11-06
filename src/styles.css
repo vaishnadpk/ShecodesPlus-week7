@@ -41,3 +41,11 @@ img {
 li:first-letter {
   text-transform: capitalize;
 }
+#celciusClick,
+#fahrenheitClick {
+  text-decoration: none;
+  cursor: default;
+}
+.col-6 .active {
+  color: #676868;
+}

@@ -34,6 +34,8 @@ function displayClimate(response) {
 
   const { city, country, temperature, condition, wind, time } = response.data;
 
+  celciusTemperature = temperature.current;
+
   temperatureEvent.innerHTML = Math.round(temperature.current);
   cityNameEvent.innerHTML = `${city},${country}`;
   humidityEvent.innerHTML = temperature.humidity;
@@ -49,11 +51,36 @@ function search(city) {
   axios.get(apiUrl).then(displayClimate);
 }
 
+function showFahrenheitTemperature(event) {
+  event.preventDefault();
+  celciusClick.classList.remove("active");
+  let faTemperature = (celciusTemperature * 9) / 5 + 32;
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(faTemperature);
+}
+let celciusTemperature = "null";
+
+function showCelciusTemperature(event) {
+  event.preventDefault();
+  fahrenheitClick.classList.add("active");
+  let ceTemperature = celciusTemperature;
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(ceTemperature);
+}
+
 function handleSearch(event) {
   event.preventDefault();
   let searchInputElement = document.querySelector("#searchInput");
   search(searchInputElement.value);
 }
 
+search("helsingborg");
+
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSearch);
+
+let fahrenheitClickEvent = document.querySelector("#fahrenheitClick");
+fahrenheitClickEvent.addEventListener("click", showFahrenheitTemperature);
+
+let celciusClickEvent = document.querySelector("#celciusClick");
+celciusClickEvent.addEventListener("click", showCelciusTemperature);
