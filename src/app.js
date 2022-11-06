@@ -32,10 +32,10 @@ function displayClimate(response) {
   let dateElement = document.querySelector("#date");
   let iconElement = document.querySelector("#icon");
 
-  const { city, temperature, condition, wind, time } = response.data;
+  const { city, country, temperature, condition, wind, time } = response.data;
 
   temperatureEvent.innerHTML = Math.round(temperature.current);
-  cityNameEvent.innerHTML = city;
+  cityNameEvent.innerHTML = `${city},${country}`;
   humidityEvent.innerHTML = temperature.humidity;
   windEvent.innerHTML = Math.round(wind.speed);
   descriptionEvent.innerHTML = condition.description;
