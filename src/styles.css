@@ -2,7 +2,8 @@
   font-family: "Merriweather", serif;
   width: 60%;
   max-width: 600px;
-  border: 2px solid rgb(165, 163, 163);
+  border: 5px solid rgb(165, 163, 163);
+  border-radius: 10px;
   padding: 20px;
   margin: 15px auto;
 }
@@ -48,6 +49,14 @@ li:first-letter {
 }
 .col-6 .active {
   color: #676868;
+}
+.weatherAnime {
+  width: 200px;
+  height: 180px;
+  border: 5px solid rgb(130, 125, 125);
+  border-radius: 50%;
+  position: absolute;
+  top: 125px;
 }
 p {
   color: #676868;
