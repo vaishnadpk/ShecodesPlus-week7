@@ -15,6 +15,15 @@ h1 {
   padding-top: 20px;
   color: #676868;
 }
+h2 {
+  color: #676868;
+  padding: 5px;
+}
+.sun {
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+}
 li {
   color: #878a8d;
   list-style: none;
@@ -52,11 +61,11 @@ li:first-letter {
 }
 .weatherAnime {
   width: 200px;
-  height: 180px;
+  height: 170px;
   border: 5px solid rgb(130, 125, 125);
   border-radius: 50%;
   position: absolute;
-  top: 125px;
+  top: 200px;
 }
 p {
   color: #676868;
