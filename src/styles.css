@@ -1,8 +1,9 @@
 .container {
   font-family: "Merriweather", serif;
+  background-color: #33495f;
   width: 60%;
   max-width: 600px;
-  border: 5px solid rgb(165, 163, 163);
+  border: 5px solid #6a99df;
   border-radius: 10px;
   padding: 20px;
   margin: 15px auto;
@@ -13,10 +14,19 @@
 }
 h1 {
   padding-top: 20px;
-  color: #676868;
+  color: #f9db63;
 }
+h2 {
+  color: white;
+  padding: 5px;
+}
+hr {
+  height: 3px;
+  background-color: white;
+}
+
 li {
-  color: #878a8d;
+  color: #a3b5c8;
   list-style: none;
 }
 img {
@@ -31,7 +41,7 @@ img {
 }
 #temperature {
   font-size: 70px;
-  color: #4b4d4e;
+  color: white;
   line-height: 1;
   font-weight: 400;
 }
@@ -51,15 +61,13 @@ li:first-letter {
   color: #676868;
 }
 .weatherAnime {
-  width: 200px;
-  height: 180px;
-  border: 5px solid rgb(130, 125, 125);
-  border-radius: 50%;
+  width: 160px;
+  height: 160px;
   position: absolute;
-  top: 125px;
+  top: 250px;
 }
 p {
-  color: #676868;
+  color: #b0b8bf;
   font-family: monospace;
   padding: 5px;
   margin-bottom: 0;
