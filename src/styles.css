@@ -66,27 +66,21 @@ li:first-letter {
   position: absolute;
   top: 250px;
 }
-p {
+.source {
   color: #b0b8bf;
   font-family: monospace;
   padding: 5px;
   margin-bottom: 0;
   font-size: large;
 }
-.weather-forecast {
-  margin-top: 20px;
-  text-align: center;
+#weather-forecast {
+  margin-top: 55px;
 }
-.weather-forecastDay {
-  font-size: 16px;
+.forecst {
+  text-align: center;
   color: #b0b8bf;
 }
-.weather-forecastTemperature {
-  font-size: 13px;
-}
-.maxTemp {
-  color: white;
-}
-.minTemp {
-  color: #c1cad2;
+.forecstImg {
+  display: block;
+  margin: 0 auto;
 }
