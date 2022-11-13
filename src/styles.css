@@ -73,12 +73,18 @@ li:first-letter {
   margin-bottom: 0;
   font-size: large;
 }
-#weather-forecast {
+.container .weather-forecast {
   margin-top: 55px;
 }
 .forecst {
   text-align: center;
-  color: #b0b8bf;
+  color: #ced5db;
+}
+.col-2 .temp {
+  font-size: 14px;
+}
+.minTemp {
+  opacity: 0.4;
 }
 .forecstImg {
   display: block;

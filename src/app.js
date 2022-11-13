@@ -22,6 +22,39 @@ function formateDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+
+  let days = ["Thu", "Fri", "Sat", "Sun", "Mon", "Tue"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+  
+            <div class="col-2">
+              <p class="forecst">${day}</p>
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
+                alt=""
+                width="42"
+                class="forecstImg"
+              />
+
+              <p class="forecst temp">
+                <span class="maxTemp">18°</span>
+                <span class="minTemp">12°</span>
+              </p>
+            </div>
+          
+  `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function displayClimate(response) {
   console.log(response.data);
   let temperatureEvent = document.querySelector("#temperature");
@@ -31,6 +64,8 @@ function displayClimate(response) {
   let descriptionEvent = document.querySelector("#description");
   let dateElement = document.querySelector("#date");
   let iconElement = document.querySelector("#icon");
+
+  displayForecast();
 
   const { city, country, temperature, condition, wind, time } = response.data;
 
