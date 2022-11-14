@@ -45,9 +45,10 @@ img {
   line-height: 1;
   font-weight: 400;
 }
-#unit {
+.unit {
   position: relative;
   top: -40px;
+  color: #d7dde3;
 }
 li:first-letter {
   text-transform: capitalize;
@@ -57,8 +58,8 @@ li:first-letter {
   text-decoration: none;
   cursor: default;
 }
-.col-6 .active {
-  color: #676868;
+.col-5 .active {
+  color: #d7dde3;
 }
 .weatherAnime {
   width: 160px;
